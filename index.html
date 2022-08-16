@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Password Generator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=”stylesheet”
+        href=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css”rel=”nofollow”
+        integrity=”sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I” crossorigin=”anonymous”>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="Container">
+        <h1>Password Generator</h1>
+
+        <div class="Passwd">
+            <h1 id="view"></h1>
+        </div>
+
+        <div class="Line1">
+            <div class="Type">
+                <h2>Type:</h2>
+                <div>
+                    <input type="radio" name="radio" id="password" class="Password radio" checked />
+                    <label class="radiolabel" for="radio1">Password</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="radio" id="pin" class="PIN radio" />
+                    <label class="radiolabel" for="pin">PIN</label>
+                </div>
+            </div>
+
+            <div class="Length">
+                <h2>Length:</h2>
+                <div class="slidescontainer">
+                    <input type="range" min="4" max="60" value="8" class="slider" id="Range">
+                    <p>Characters: <span id="Number"></span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Options">
+            <h2>Addition Options:</h2>
+            <div class="inputGroup">
+                <input class="cbox" id="lower" name="lower" type="checkbox" />
+                <label class="labelGroup" for="lower">Lowercase Letter</label>
+            </div>
+
+            <div class="inputGroup">
+                <input class="cbox" id="upper" name="upper" type="checkbox" />
+                <label class="labelGroup" for="upper">UpperCase Letters</label>
+            </div>
+            <div class="inputGroup">
+                <input class="cbox" id="special" name="special" type="checkbox" />
+                <label class="labelGroup" for="special">Special Characters</label>
+            </div>
+
+            <div class="inputGroup">
+                <input class="cbox" id="num" name="num" type="checkbox" />
+                <label class="labelGroup" for="num">Numbers</label>
+            </div>
+
+        </div>
+        <div class="Generate">
+            <button type="button but-gen" onclick="" class="btn btn-primary" id="Generate">Generate</button>
+            <button type="button but-copy" onclick="Copy()" class="btn btn-primary" id="Generate">Copy</button>
+        </div>
+
+    </div>
+    <script src="script.js" async defer></script>
+</body>
+
+</html>
